@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Học Tuổi Trẻ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e0;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 28px;
+            font-weight: bold;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s;
+            position: relative;
+        }
+        .hero-image {
+            width: 100%;
+            height: 350px;
+            background: url('https://assets.onecompiler.app/43a8887ae/43a8p84eq/z4668077179452_1e86afc77cfed0796b0c5c32076c4e2b.jpg') no-repeat center center/cover;
+            border-bottom: 5px solid #ff5722;
+            animation: zoomIn 1.5s;
+        }
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px;
+        }
+        .main-content {
+            flex: 2;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #ffcc80;
+            border-radius: 15px;
+            margin-left: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeInRight 1s;
+        }
+        .sidebar img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        .sidebar img:hover {
+            transform: scale(1.1);
+        }
+        nav {
+            background: #ff5722;
+            padding: 15px 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            transition: background 0.3s;
+            position: sticky;
+            top: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff9800;
+            transform: scale(1.1);
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background: #e65100;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chào mừng đến với A1-K45-LG3</h1>
+    </header>
+    <div class="hero-image"></div>
+    <nav>
+        <ul>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#courses">Hoạt động</a></li>
+            <li><a href="#events">Kỷ niệm</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-container">
+        <div class="main-content">
+            <section id="about" class="card">
+                <h2>Giới thiệu</h2>
+                <p>A1-K45-LG3 niên khóa 2022-2025</p>
+                <p>GVCN: Đặng Thị Huệ</p>
+            </section>
+            <section id="courses" class="card">
+                <h2>Hoạt động</h2>
+                <p>Danh sách các hoạt động của A1-K45-LG3.</p>
+            </section>
+            <section id="events" class="card">
+                <h2>Kỷ niệm</h2>
+                <p>Nơi lưu giữ thanh xuân.</p>
+            </section>
+            <section id="contact" class="card">
+                <h2>Liên hệ</h2>
+                <p>Fanpage: A1-K45-LG3 | Email:a1k45lg3@gmail.com</p>
+                <p>Phòng B1 - Dãy nhà B</p>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <h3>Tin tức mới</h3>
+            <p>Thông tin cập nhật về các sự kiện và hoạt động của lớp.</p>
+            <h3>Hình ảnh</h3>
+            <img src="https://assets.onecompiler.app/43a8887ae/43a87jruh/tr%C6%B0%E1%BB%9Dng%207.jpg" alt="Hình ảnh trường">
+            <img src="https://assets.onecompiler.app/43a8887ae/43a8p84eq/z4891766076463_3128b2dfbd984fecdd32ab1d8b9f81c6.jpg" alt="Hình ảnh sự kiện">
+            <img src="https://assets.onecompiler.app/43a8887ae/43a8p84eq/logo%20l%E1%BB%9Bp%20h%E1%BB%8Dc%20h%E1%BA%A1nh%20ph%C3%BAc.png" alt="Hình ảnh học sinh">
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Lớp học hạnh phúc.</p>
+    </footer>
+</body>
+</html>
+
